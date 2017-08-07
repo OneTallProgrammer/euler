@@ -3,7 +3,7 @@
  *
  *
 
- Largest product in a seris
+ Largest product in a series
 
  The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 
@@ -38,13 +38,9 @@ public class Problem8 {
         }
 
         System.out.println(largestProduct);
-
-
-
-
-
     }
 
+    // reads in the digits of the number proposed in problem 8 into an ArrayList
     public static ArrayList<Integer> readInNumber(String filePath){
         File number = new File(filePath);
         ArrayList<Integer> digits = new ArrayList<>();
@@ -57,10 +53,6 @@ public class Problem8 {
             }
         }catch(FileNotFoundException e){
             e.printStackTrace();
-        }
-
-        for(int i = 0; i < digits.size(); i++){
-            System.out.println(digits.get(i));
         }
 
         return digits;
